@@ -1,0 +1,429 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:fdsp_amplifier
+LIBS:fdsp_connector
+LIBS:fdsp_device
+LIBS:fdsp_digital
+LIBS:fdsp_dsp
+LIBS:fdsp_mechanical
+LIBS:fdsp_pinhead
+LIBS:fdsp_regulator
+LIBS:fdsp_transistor
+LIBS:fdsp_power
+LIBS:StdConnector-cache
+LIBS:SPDIF_Transceiver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STDCONN P101
+U 1 1 5738613F
+P 3400 2350
+F 0 "P101" H 3400 2800 50  0000 C CNN
+F 1 "STDCONN" H 3400 1900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x08" H 3400 1150 60  0001 C CNN
+F 3 "" H 3400 1150 60  0000 C CNN
+	1    3400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR01
+U 1 1 57386388
+P 3000 1900
+F 0 "#PWR01" H 3000 1750 50  0001 C CNN
+F 1 "+12V" H 3000 2040 50  0000 C CNN
+F 2 "" H 3000 1900 60  0000 C CNN
+F 3 "" H 3000 1900 60  0000 C CNN
+	1    3000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5738639E
+P 3800 2800
+F 0 "#PWR02" H 3800 2550 50  0001 C CNN
+F 1 "GND" H 3800 2650 50  0000 C CNN
+F 2 "" H 3800 2800 60  0000 C CNN
+F 3 "" H 3800 2800 60  0000 C CNN
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+Text Label 2700 2100 0    60   ~ 0
+MDI
+Text Label 2700 2200 0    60   ~ 0
+MDO
+Text Label 2700 2300 0    60   ~ 0
+BCLK
+Text Label 2700 2400 0    60   ~ 0
+LRCLK
+Text Label 2700 2500 0    60   ~ 0
+SDA
+Text Label 2700 2600 0    60   ~ 0
+SCL
+Text Label 2700 2700 0    60   ~ 0
+MCLK
+$Sheet
+S 8400 2500 800  300 
+U 573874A9
+F0 "SPDIF_Input" 60
+F1 "SPDIF_Input.sch" 60
+F2 "SPDIF_RX" O L 8400 2650 60 
+$EndSheet
+$Sheet
+S 8400 1900 800  300 
+U 57388AAC
+F0 "SPDIF_Output" 60
+F1 "SPDIF_Output.sch" 60
+F2 "SPDIF_TX" I L 8400 2050 60 
+$EndSheet
+$Sheet
+S 6600 1900 1400 900 
+U 57389EF7
+F0 "Transceiver" 60
+F1 "Transceiver.sch" 60
+F2 "SCL" I L 6600 2100 60 
+F3 "SDA" B L 6600 2000 60 
+F4 "DOUT" O L 6600 2300 60 
+F5 "DIN" I L 6600 2400 60 
+F6 "BCLK" I L 6600 2500 60 
+F7 "LRCLK" I L 6600 2600 60 
+F8 "MCLK" I L 6600 2700 60 
+F9 "SPDIF_TX" O R 8000 2050 60 
+F10 "SPDIF_RX" I R 8000 2650 60 
+$EndSheet
+Text Label 6100 2000 0    60   ~ 0
+SDA
+Text Label 6100 2100 0    60   ~ 0
+SCL
+Text Label 6100 2300 0    60   ~ 0
+MDI
+Text Label 6100 2400 0    60   ~ 0
+MDO
+Text Label 6100 2500 0    60   ~ 0
+BCLK
+Text Label 6100 2600 0    60   ~ 0
+LRCLK
+Text Label 6100 2700 0    60   ~ 0
+MCLK
+$Comp
+L LM2574 U101
+U 1 1 5739B40A
+P 3650 5150
+F 0 "U101" H 3950 5750 60  0000 C CNN
+F 1 "LM2574" H 3450 5750 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 4000 5150 60  0001 C CNN
+F 3 "" H 4000 5150 60  0000 C CNN
+	1    3650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L101
+U 1 1 5739B53F
+P 4500 4800
+F 0 "L101" H 4530 4840 50  0000 L CNN
+F 1 "680u" H 4530 4760 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11x5mm_RM2.5_CopperClear" H 4500 4800 60  0001 C CNN
+F 3 "" H 4500 4800 60  0000 C CNN
+	1    4500 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C104
+U 1 1 5739B6B6
+P 5000 5200
+F 0 "C104" H 5025 5300 50  0000 L CNN
+F 1 "470u" H 5025 5100 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 5038 5050 30  0001 C CNN
+F 3 "" H 5000 5200 60  0000 C CNN
+	1    5000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C103
+U 1 1 5739B74A
+P 4700 5200
+F 0 "C103" H 4725 5300 50  0000 L CNN
+F 1 "100n" H 4725 5100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 5050 30  0001 C CNN
+F 3 "" H 4700 5200 60  0000 C CNN
+	1    4700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C102
+U 1 1 5739BA56
+P 3000 5200
+F 0 "C102" H 3025 5300 50  0000 L CNN
+F 1 "100n" H 3025 5100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3038 5050 30  0001 C CNN
+F 3 "" H 3000 5200 60  0000 C CNN
+	1    3000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C101
+U 1 1 5739BAC3
+P 2700 5200
+F 0 "C101" H 2725 5300 50  0000 L CNN
+F 1 "100u" H 2725 5100 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11x5mm_RM2.5_CopperClear" H 2738 5050 30  0001 C CNN
+F 3 "" H 2700 5200 60  0000 C CNN
+	1    2700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R101
+U 1 1 5739C0C4
+P 5400 5000
+F 0 "R101" H 5430 5020 50  0000 L CNN
+F 1 "3k3" H 5430 4960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5400 5000 60  0001 C CNN
+F 3 "" H 5400 5000 60  0000 C CNN
+	1    5400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R102
+U 1 1 5739C13B
+P 5400 5400
+F 0 "R102" H 5430 5420 50  0000 L CNN
+F 1 "2k" H 5430 5360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5400 5400 60  0001 C CNN
+F 3 "" H 5400 5400 60  0000 C CNN
+	1    5400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D101
+U 1 1 5739C6B0
+P 4300 5200
+F 0 "D101" H 4300 5300 50  0000 C CNN
+F 1 "D_Schottky" H 4300 5100 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 4300 5200 60  0001 C CNN
+F 3 "" H 4300 5200 60  0000 C CNN
+	1    4300 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5739D171
+P 3650 5700
+F 0 "#PWR03" H 3650 5450 50  0001 C CNN
+F 1 "GND" H 3650 5550 50  0000 C CNN
+F 2 "" H 3650 5700 60  0000 C CNN
+F 3 "" H 3650 5700 60  0000 C CNN
+	1    3650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR04
+U 1 1 5739D844
+P 2700 4700
+F 0 "#PWR04" H 2700 4550 50  0001 C CNN
+F 1 "+12V" H 2700 4840 50  0000 C CNN
+F 2 "" H 2700 4700 60  0000 C CNN
+F 3 "" H 2700 4700 60  0000 C CNN
+	1    2700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR05
+U 1 1 5739DBD8
+P 5400 4700
+F 0 "#PWR05" H 5400 4550 50  0001 C CNN
+F 1 "+3V3" H 5400 4840 50  0000 C CNN
+F 2 "" H 5400 4700 60  0000 C CNN
+F 3 "" H 5400 4700 60  0000 C CNN
+	1    5400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2000 3800 2000
+Wire Wire Line
+	3800 2000 3800 2800
+Wire Wire Line
+	3100 2000 3000 2000
+Wire Wire Line
+	3000 2000 3000 1900
+Wire Wire Line
+	3700 2100 3800 2100
+Connection ~ 3800 2100
+Wire Wire Line
+	3700 2200 3800 2200
+Connection ~ 3800 2200
+Wire Wire Line
+	3700 2300 3800 2300
+Connection ~ 3800 2300
+Wire Wire Line
+	3700 2400 3800 2400
+Connection ~ 3800 2400
+Wire Wire Line
+	3700 2500 3800 2500
+Connection ~ 3800 2500
+Wire Wire Line
+	3700 2600 3800 2600
+Connection ~ 3800 2600
+Wire Wire Line
+	3700 2700 3800 2700
+Connection ~ 3800 2700
+Wire Wire Line
+	3100 2100 2700 2100
+Wire Wire Line
+	2700 2200 3100 2200
+Wire Wire Line
+	3100 2300 2700 2300
+Wire Wire Line
+	3100 2400 2700 2400
+Wire Wire Line
+	3100 2500 2700 2500
+Wire Wire Line
+	2700 2600 3100 2600
+Wire Wire Line
+	3100 2700 2700 2700
+Wire Wire Line
+	8400 2650 8000 2650
+Wire Wire Line
+	8400 2050 8000 2050
+Wire Wire Line
+	6600 2000 6100 2000
+Wire Wire Line
+	6100 2100 6600 2100
+Wire Wire Line
+	6600 2300 6100 2300
+Wire Wire Line
+	6100 2400 6600 2400
+Wire Wire Line
+	6600 2500 6100 2500
+Wire Wire Line
+	6100 2600 6600 2600
+Wire Wire Line
+	6600 2700 6100 2700
+Wire Wire Line
+	4700 5050 4700 4800
+Wire Wire Line
+	4600 4800 5800 4800
+Wire Wire Line
+	5000 4800 5000 5050
+Connection ~ 4700 4800
+Wire Wire Line
+	4200 4800 4400 4800
+Wire Wire Line
+	4700 5600 4700 5350
+Wire Wire Line
+	2700 5600 5800 5600
+Wire Wire Line
+	3850 5600 3850 5500
+Wire Wire Line
+	3450 5600 3450 5500
+Connection ~ 3850 5600
+Wire Wire Line
+	3650 5500 3650 5700
+Connection ~ 3650 5600
+Wire Wire Line
+	5000 5600 5000 5350
+Connection ~ 4700 5600
+Wire Wire Line
+	5400 4700 5400 4900
+Connection ~ 5000 4800
+Wire Wire Line
+	5400 5100 5400 5300
+Wire Wire Line
+	5400 5600 5400 5500
+Connection ~ 5000 5600
+Wire Wire Line
+	5400 5200 5200 5200
+Wire Wire Line
+	5200 5200 5200 4700
+Wire Wire Line
+	5200 4700 4200 4700
+Connection ~ 5400 5200
+Wire Wire Line
+	4300 5050 4300 4800
+Connection ~ 4300 4800
+Wire Wire Line
+	4300 5350 4300 5600
+Connection ~ 4300 5600
+Wire Wire Line
+	2700 5600 2700 5350
+Connection ~ 3450 5600
+Wire Wire Line
+	3000 5350 3000 5600
+Connection ~ 3000 5600
+Wire Wire Line
+	2700 4800 3100 4800
+Wire Wire Line
+	2700 4700 2700 5050
+Wire Wire Line
+	3000 5050 3000 4800
+Connection ~ 3000 4800
+Connection ~ 5400 4800
+Connection ~ 2700 4800
+$Comp
+L R_Small R103
+U 1 1 5739FFBE
+P 5800 5400
+F 0 "R103" H 5830 5420 50  0000 L CNN
+F 1 "68" H 5830 5360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5800 5400 60  0001 C CNN
+F 3 "" H 5800 5400 60  0000 C CNN
+	1    5800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Small D102
+U 1 1 573A04E7
+P 5800 5000
+F 0 "D102" H 5750 5125 50  0000 L CNN
+F 1 "Green" H 5625 4900 50  0000 L CNN
+F 2 "LEDs:LED-0805" V 5800 5000 60  0001 C CNN
+F 3 "" V 5800 5000 60  0000 C CNN
+	1    5800 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 4800 5800 4900
+Wire Wire Line
+	5800 5100 5800 5300
+Wire Wire Line
+	5800 5600 5800 5500
+Connection ~ 5400 5600
+$EndSCHEMATC

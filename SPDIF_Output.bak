@@ -1,0 +1,251 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:fdsp_amplifier
+LIBS:fdsp_connector
+LIBS:fdsp_device
+LIBS:fdsp_digital
+LIBS:fdsp_dsp
+LIBS:fdsp_mechanical
+LIBS:fdsp_pinhead
+LIBS:fdsp_regulator
+LIBS:fdsp_transistor
+LIBS:fdsp_power
+LIBS:StdConnector-cache
+LIBS:SPDIF_Transceiver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +3V3 #PWR010
+U 1 1 57388E10
+P 3750 2400
+F 0 "#PWR010" H 3750 2250 50  0001 C CNN
+F 1 "+3V3" H 3750 2540 50  0000 C CNN
+F 2 "" H 3750 2400 60  0000 C CNN
+F 3 "" H 3750 2400 60  0000 C CNN
+	1    3750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3100 3400 3100
+Wire Wire Line
+	3750 2700 3750 2900
+$Comp
+L C_Small C302
+U 1 1 57388E19
+P 3750 3000
+F 0 "C302" H 3760 3070 50  0000 L CNN
+F 1 "100n" H 3760 2920 50  0000 L CNN
+F 2 "" H 3750 3000 60  0000 C CNN
+F 3 "" H 3750 3000 60  0000 C CNN
+	1    3750 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3300 3750 3300
+Wire Wire Line
+	3750 3300 3750 3100
+Wire Wire Line
+	3500 3300 3500 3400
+Connection ~ 3500 3300
+$Comp
+L GND #PWR011
+U 1 1 57388E25
+P 3500 3400
+F 0 "#PWR011" H 3500 3150 50  0001 C CNN
+F 1 "GND" H 3500 3250 50  0000 C CNN
+F 2 "" H 3500 3400 60  0000 C CNN
+F 3 "" H 3500 3400 60  0000 C CNN
+	1    3500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L301
+U 1 1 57388E2B
+P 3750 2600
+F 0 "L301" H 3780 2640 50  0000 L CNN
+F 1 "(47u)" H 3780 2560 50  0000 L CNN
+F 2 "" H 3750 2600 60  0000 C CNN
+F 3 "" H 3750 2600 60  0000 C CNN
+	1    3750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2400 3750 2500
+$Comp
+L JUMPER3 JP301
+U 1 1 57388E33
+P 4400 4000
+F 0 "JP301" H 4450 3900 50  0000 L CNN
+F 1 "TX_Select" H 4400 4100 50  0000 C BNN
+F 2 "" H 4400 4000 60  0000 C CNN
+F 3 "" H 4400 4000 60  0000 C CNN
+	1    4400 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 3750
+$Comp
+L RCA_01 J301
+U 1 1 57388E3C
+P 3100 4900
+F 0 "J301" H 3050 4800 60  0000 C CNN
+F 1 "SPDIF_OUT" H 3050 5100 60  0000 C CNN
+F 2 "" H 3100 4900 60  0000 C CNN
+F 3 "" H 3100 4900 60  0000 C CNN
+	1    3100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2800 3500 2800
+Wire Wire Line
+	3500 2800 3500 3100
+Connection ~ 3750 2800
+$Comp
+L R R301
+U 1 1 57388E46
+P 3800 5050
+F 0 "R301" V 3880 5050 50  0000 C CNN
+F 1 "110" V 3800 5050 50  0000 C CNN
+F 2 "" V 3730 5050 30  0000 C CNN
+F 3 "" H 3800 5050 30  0000 C CNN
+	1    3800 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4800 3900 4800
+Wire Wire Line
+	3800 4800 3800 4900
+Wire Wire Line
+	3800 5200 3800 5400
+Wire Wire Line
+	3800 5300 3500 5300
+Wire Wire Line
+	3500 5300 3500 4950
+Wire Wire Line
+	3500 4950 3400 4950
+$Comp
+L GND #PWR012
+U 1 1 57388E55
+P 3800 5400
+F 0 "#PWR012" H 3800 5150 50  0001 C CNN
+F 1 "GND" H 3800 5250 50  0000 C CNN
+F 2 "" H 3800 5400 60  0000 C CNN
+F 3 "" H 3800 5400 60  0000 C CNN
+	1    3800 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 5300
+$Comp
+L C_Small C301
+U 1 1 57388E5C
+P 3600 4800
+F 0 "C301" H 3610 4870 50  0000 L CNN
+F 1 "100n" H 3610 4720 50  0000 L CNN
+F 2 "" H 3600 4800 60  0000 C CNN
+F 3 "" H 3600 4800 60  0000 C CNN
+	1    3600 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4800 4400 4800
+Wire Wire Line
+	4400 4800 4400 4250
+Wire Wire Line
+	4500 4000 5400 4000
+Text HLabel 5400 4000 2    60   Input ~ 0
+SPDIF_TX
+$Comp
+L TEST W301
+U 1 1 57388E69
+P 4800 4300
+F 0 "W301" H 4800 4360 40  0000 C CNN
+F 1 "SPDIF_TX_TEST" H 4800 4230 40  0000 C CNN
+F 2 "" H 4800 4300 60  0000 C CNN
+F 3 "" H 4800 4300 60  0000 C CNN
+	1    4800 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 57388E70
+P 4800 4600
+F 0 "#PWR013" H 4800 4350 50  0001 C CNN
+F 1 "GND" H 4800 4450 50  0000 C CNN
+F 2 "" H 4800 4600 60  0000 C CNN
+F 3 "" H 4800 4600 60  0000 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4100 4800 4000
+Connection ~ 4800 4000
+Wire Wire Line
+	4800 4500 4800 4600
+Wire Wire Line
+	3500 4800 3400 4800
+Connection ~ 3800 4800
+$Comp
+L R R302
+U 1 1 57389314
+P 4050 4800
+F 0 "R302" V 4130 4800 50  0000 C CNN
+F 1 "210" V 4050 4800 50  0000 C CNN
+F 2 "" V 3980 4800 30  0000 C CNN
+F 3 "" H 4050 4800 30  0000 C CNN
+	1    4050 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L TOTX147 U301
+U 1 1 57389624
+P 2950 3350
+F 0 "U301" H 2950 3700 60  0000 C CNN
+F 1 "TOTX147" H 2950 3300 60  0000 C CNN
+F 2 "" H 2950 3350 60  0000 C CNN
+F 3 "" H 2950 3350 60  0000 C CNN
+	1    2950 3350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
