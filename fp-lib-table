@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name fdsp_connector)(type KiCad)(uri /Users/fabian/Documents/git/freeDSP-KiCadLibrary/Footprint/fdsp_connector.pretty)(options "")(descr ""))
+  (lib (name fdsp_mechanical)(type KiCad)(uri /Users/fabian/Documents/git/freeDSP-KiCadLibrary/Footprint/fdsp_mechanical.pretty)(options "")(descr ""))
+)
